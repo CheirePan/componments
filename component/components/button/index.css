@@ -1,0 +1,24 @@
+/**
+此文件是按钮组件样式
+*/
+
+
+
+ /*qf公用前缀*/
+.qf-button{
+	display: inline-block;
+	padding: 8px 15px;
+	font-size: 12px;
+	background-color: #75eae7;
+	border: 1px solid #dddddd;
+	border-radius: 3px;
+}
+/*警告按钮*/
+.qf-button-warn{
+	background-color: #ff0000;
+}
+
+/*取消按钮*/
+.qf-button-cancel{
+	background-color: #aaaaaa;
+}

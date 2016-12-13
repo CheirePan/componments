@@ -1,0 +1,25 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+.page-modalone{
+	width: 400px;
+	height: 150px;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+
+#abc{
+	/* display: none; */
+}
+
+
+.news{
+	width: 500px;
+	height: 350px;
+	border: 1px solid #000000;
+}

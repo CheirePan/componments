@@ -1,0 +1,19 @@
+/**
+此文件是按钮组件样式
+*/
+
+
+
+ /*qf公用前缀*/
+.qf-dialog-alert{
+	width: 300px;
+	height: 150px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -75px;
+	background: #ffffff;
+	border: 1px solid #000;
+	text-align: center;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>组件生态化</title>
+	<link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+	<!-- 1.引入sea.js文件 -->
+	<script src="http://localhost:3000/day09/lib/sea.js"></script>
+	<script src="http://localhost:3000/day09/lib/seajs-text.js"></script>
+
+	<div>
+		<a id="showmodal" href="#" class="qf-button">AAA</a>
+		<a id="alerttest" href="#" class="qf-button qf-button-warn">AAA</a>
+		<a href="#" class="qf-button qf-button-cancel">AAA</a>
+	</div>
+	<div id="abc" class="page-modalone">
+		<h1>hello</h1>
+		<a id="close-btn" class="qf-button">关闭</a>
+	</div>
+	<div id="news" class="news"></div>
+	<!-- 2.设置路径 -->
+	<script>
+		seajs.config({
+			//设置路径，方便跨目录调用
+			paths:{
+				'cdn':'http://cdn.bootcss.com',
+				'components':'http://localhost:3000/day09/components',
+				'page':'http://localhost:3000/day09/page',
+				'lib':'http://localhost:3000/day09/lib'
+			},
+			alias:{
+				'jquery':'cdn/jquery/3.1.1/jquery.js',
+				'button':'components/button/index',
+				'modal':'components/modal/index',
+				'tabs':'components/tab/index',
+				'handlebars':'lib/handlebars.min.js',
+				'dialog':'components/dialog/index'
+			}
+		});
+	</script>
+	<!-- 入口 -->
+	<script>
+		seajs.use('page/js/test');
+	</script>
+
+</body>
+</html>
